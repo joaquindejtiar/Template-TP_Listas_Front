@@ -3,7 +3,44 @@
     margin: 0;
     padding: 0px;
 }
-
-.comida-container {
-  /* Estilos para el contenedor de la lista */
+body{
+  background-color: rgb(223, 217, 217)
+}
+#comidaContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  padding: 2rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 0 20%;
+  max-width: 20%;
+  height: 8rem;
+  background-color: whitesmoke;
+  border-radius: 0.8rem;
+  border: solid 0.05rem rgb(110, 106, 106);
+}
+h2{
+  font-family:sans-serif;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+}
+p{
+  font-family:sans-serif;
+  position: absolute;
+  color:rgb(151, 145, 145);
+  left: 1rem;
+  top: 3.1rem;
+}
+span {
+  font-family: sans-serif;
+  position: absolute;
+  color: black;
+  left: 1rem;
+  top: 5.3rem;
+  font-weight: 400;
 }
