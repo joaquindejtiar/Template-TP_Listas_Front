@@ -76,10 +76,10 @@ let comidas = [
 ];
 
 const container = document.getElementById('comidaContainer');
+function mostrarComidasConFor () {
+for (let i = 0; i < comidas.length; i++) {
 
-for (let i = 0; i < comidas.length; i++){
-
-comidaContainer.innerHTML = 
+comidaContainer.innerHTML += 
 `
 <article class="card">
    <h2>${comidas[i].nombre} </h2>
@@ -89,3 +89,24 @@ comidaContainer.innerHTML =
 
 `
 }
+}
+
+function MostrarComidasConForEach () {
+
+  comidas.forEach( comida => {
+    comidaContainer.innerHTML += 
+`
+<article class="card">
+   <h2>${comida.nombre} </h2>
+   <p>${comida.provincia} </p>
+   <span>${comida.categoria} </span>
+   <ul>
+   ${comida.ingredientes.map(ingrediente => `<li>${ingrediente}</li>`).join('')}
+   </ul>
+</article>
+
+`
+  })
+}
+
+MostrarComidasConForEach();
