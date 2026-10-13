@@ -24,7 +24,7 @@ body{
   border-radius: 0.8rem;
   border: solid 0.05rem rgb(110, 106, 106);
 }
-h2{
+.ElAcheDos{
   font-family:sans-serif;
   position: absolute;
   left: 1rem;
@@ -53,4 +53,14 @@ ul {
   left: 2em;
   top: 7.5rem;
   font-weight: 400;
+}
+.addFood {
+  display: flex;
+  justify-content: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 90vh;
+  gap: 2vh;
 }

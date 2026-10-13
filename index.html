@@ -7,8 +7,15 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <header>
-      <!-- Para filtros y navegacion -->
+    <header class="flitros">
+      <input type="search" id="buscador" placeholder="Buscar por nombre, provincia o categoria">
+
+      <select id="filtroCategoria">
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+      </select>
+      
     </header>
 
     <main class="comida-container" id="comidaContainer">
@@ -16,7 +23,19 @@
     </main>     
 
     <section class="addFood">
-      <!-- Para el form para agregar comida -->
+    <form id="agregarComidaForm">
+      <h2 class="agregarillo">Agregar Comida</h2>
+      <label for="nombre"> Nombre de la comida:</label>
+      <input type="text" id="nombre" placeholder="Nombre de la comida">
+
+      <label for="provincia">Provincia:</label>
+      <input type="text" id="provincia" placeholder="Provincia" required>
+
+      <label for="categoria"> Categoria:</label>
+      <input type="text" id="categoria" placeholder="Categoria" required>
+
+      <button type="submit"> Agregar</button>
+    </form>
     </section>
 
     <script type="module" src="./main.js"></script>
