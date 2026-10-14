@@ -64,3 +64,7 @@ form {
   width: 90vh;
   gap: 2vh;
 }
+#buscador {
+  width: 60vw;
+  height: 5vh;
+}

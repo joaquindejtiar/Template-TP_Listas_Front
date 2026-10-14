@@ -7,16 +7,29 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <header class="flitros">
-      <input type="search" id="buscador" placeholder="Buscar por nombre, provincia o categoria">
+  <header class="filtros">
+    <input type="search" id="buscador" placeholder="buscar por nombre, provincia o categoria">
+    <select id="filtroCategoria">
+      <option value="">Todas las categorias</option>
+      <option value="Parrilla">Parrilla</option>
+      <option value="Horno">Horno</option>
+      <option value="Guiso">Guiso</option>
+      <option value="Frito">Frito</option>
+    </select>
 
-      <select id="filtroCategoria">
-        <option value=""></option>
-        <option value=""></option>
-        <option value=""></option>
+
+    <select id="fitroProvincia">
+      <option value="">Todas las provincias</option>
+      <option value="Buenos Aires">Buenos Aires</option>
+      <option value="Jujuy">Jujuy</option>
+      <option value="Salta">Salta</option>
+      <option value="Cordoba">Cordoba</option>
+      <option value="Entre ríos">Entre ríos</option>
+      <option value="Santa fe">Santa fe</option>
+      <option value="Tucumán">Tucumán</option>
       </select>
-      
-    </header>
+  </header>
+
 
     <main class="comida-container" id="comidaContainer">
         <!-- Contenido Dinamico -->
@@ -33,6 +46,9 @@
 
       <label for="categoria"> Categoria:</label>
       <input type="text" id="categoria" placeholder="Categoria" required>
+
+      <label for="ingredientes"> Ingredientes:</label>
+      <input type="text" id="ingredientes" placeholder="Ingredientes" required>
 
       <button type="submit"> Agregar</button>
     </form>
